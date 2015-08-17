@@ -21,6 +21,12 @@ sum' [] = 0
 sum' xs = foldl (+) 0 xs
 
 --map: takes a list and a function and applies that function to every element in the list.
+<<<<<<< HEAD:HighOrder.hs
 map' :: (a -> b) -> [a] -> [b]  
 map' _ [] = []   --base case of anything / empty list, returns the empty list
 map' f (x:xs) = f x : map f xs --otherwise split the head and recurse on the tail
+=======
+map :: (a -> b) -> [a] -> [b]  
+map _ [] = []   --base case of anything / empty list, returns the empty list
+map f (x:xs) = f x : map f xs --otherwise split the head and recurse on the tail
+>>>>>>> adaeabe0a9d2e17fb1529c8ab3f278c3d9a06952:highOrder.hs
